@@ -1,0 +1,106 @@
+        <header id="header">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="navbar-top">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <ul class="navbar-top-left-menu">
+                    
+                      <li class="nav-item">
+                        <a routerLink="/aboutus" class="nav-link">About Us</a>
+                      </li>
+                  
+                    </ul>
+                    <ul class="navbar-top-right-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="mdi mdi-magnify"></i></a>
+                      </li>
+                      <li *ngIf="!userIsAuthenticated" class="nav-item">
+                        <a routerLink="/login" class="nav-link">Login</a>
+                      </li>
+                      <li *ngIf="!userIsAuthenticated" class="nav-item">
+                        <a routerLink="/signup" class="nav-link">Sign up</a>
+                      </li>
+                      <li *ngIf="userIsAuthenticated" class="nav-item">
+                        <button mat-button (click)="onLogout()">Logout</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-bottom">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <a class="navbar-brand" href="#"
+                        ><h1 style="color: blanchedalmond;">New Press</h1></a>
+                    </div>
+                    <div>
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div
+                        class="navbar-collapse justify-content-center collapse"
+                        id="navbarSupportedContent"
+                      >
+                        <ul
+                          class="navbar-nav d-lg-flex justify-content-between align-items-center"
+                        >
+                          <li>
+                            <button class="navbar-close">
+                              <i class="mdi mdi-close"></i>
+                            </button>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" routerLink="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" routerLink="/world">World</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" routerLink="/middleEast">Middle East</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" routerLink="/sports">Sports</a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link" href="pages/art.html">Art</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/politics.html">POLITICS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/travel.html">Travel</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/contactus.html">Contact</a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <ul class="social-media">
+                      <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>

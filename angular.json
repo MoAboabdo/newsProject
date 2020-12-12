@@ -24,6 +24,9 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "newsfrontend"
+  "defaultProject": "newsfrontend",
+  "cli": {
+    "analytics": "048626a7-5c3a-4ef9-a2bb-86fe28e5f492"
+  }
 }
