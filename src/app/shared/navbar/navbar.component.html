@@ -8,6 +8,18 @@
                       <li class="nav-item">
                         <a routerLink="/aboutus" class="nav-link">About Us</a>
                       </li>
+                      <li class="nav-item">
+                        <a *ngIf="userIsAuthenticated" routerLink="/admin/createAdmin" class="nav-link">Create Admin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a *ngIf="userIsAuthenticated" routerLink="/sports/createSportsNews" class="nav-link">Create Sports News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a *ngIf="userIsAuthenticated" routerLink="/world/createWorldNews" class="nav-link">Create World News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a *ngIf="userIsAuthenticated" routerLink="/middleEast/createNews" class="nav-link">Create MiddleEast News</a>
+                      </li>
                   
                     </ul>
                     <ul class="navbar-top-right-menu">
@@ -64,9 +76,9 @@
                           <li class="nav-item">
                             <a class="nav-link" routerLink="/middleEast">Middle East</a>
                           </li>
-                          <li class="nav-item">
+                          <!-- <li class="nav-item">
                             <a class="nav-link" routerLink="/sports">Sports</a>
-                          </li>
+                          </li> -->
                           <!-- <li class="nav-item">
                             <a class="nav-link" href="pages/art.html">Art</a>
                           </li>
