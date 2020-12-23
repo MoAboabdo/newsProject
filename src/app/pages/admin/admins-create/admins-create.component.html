@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form [formGroup]="form" (submit)="onSaveAdmin()" *ngIf="!isLoading">
+      <mat-form-field>
+        <input matInput type="text" formControlName="name" placeholder="Name">
+        <mat-error *ngIf="form.get('name').invalid">Please enter admin name.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="email" placeholder="E-mail">
+        <mat-error *ngIf="form.get('email').invalid">Please enter a news description.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="type" placeholder="Type">
+        <mat-error *ngIf="form.get('type').invalid">Please enter admin Type</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" formControlName="password" placeholder="Password">
+        <mat-error *ngIf="form.get('password').invalid">Password</mat-error>
+      </mat-form-field>
+      
+      <button mat-raised-button color="accent" type="submit">Save Post</button>
+    </form>
+  </mat-card>
+  

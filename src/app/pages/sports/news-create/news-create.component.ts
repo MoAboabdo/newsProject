@@ -12,8 +12,8 @@ import { UserService } from "../../../services/user.service";
 
 @Component({
   selector: 'app-create-sports',
-  templateUrl: './create-sports.component.html',
-  styleUrls: ['./create-sports.component.css']
+  templateUrl: './news-create.component.html',
+  styleUrls: ['./news-create.component.css']
 })
 export class CreateSportsComponent implements OnInit, OnDestroy {
 

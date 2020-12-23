@@ -28,6 +28,7 @@ import { AuthInterceptor } from "./services/auth-interceptor";
 import { AdminCreateComponent } from './admins/admin-create/admin-create.component';
 import { CreateSportsComponent} from './pages/sports/create-sports/create-sports.component';
 import { NewsCreateComponent } from './pages/world/news-create/news-create.component';
+import { AdminsCreateComponent } from './pages/admin/admins-create/admins-create.component';
 
 
 
@@ -47,7 +48,8 @@ import { NewsCreateComponent } from './pages/world/news-create/news-create.compo
     AboutUsComponent,
     AdminCreateComponent,
     CreateSportsComponent,
-    NewsCreateComponent
+    NewsCreateComponent,
+    AdminsCreateComponent
   ],
   imports: [
     BrowserModule,

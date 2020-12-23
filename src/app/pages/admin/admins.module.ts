@@ -5,11 +5,11 @@ import { RouterModule } from "@angular/router";
 import { FormsModule }   from '@angular/forms';
 
 
-import { AdminCreateComponent } from "./admin-create/admin-create.component";
-import { AngularMaterialModule } from "../angular-material.module";
+import { AdminsCreateComponent } from "./admins-create/admins-create.component";
+import { AngularMaterialModule } from "../../angular-material.module";
 
 @NgModule({
-  declarations: [AdminCreateComponent],
+  declarations: [AdminsCreateComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

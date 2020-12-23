@@ -5,11 +5,11 @@ import { RouterModule } from "@angular/router";
 import { FormsModule }   from '@angular/forms';
 
 
-import { CreateSportsComponent } from "./create-sports/create-sports.component";
+import { NewsCreateComponent } from "./news-create/news-create.component";
 import { AngularMaterialModule } from "../../angular-material.module";
 
 @NgModule({
-  declarations: [CreateSportsComponent],
+  declarations: [NewsCreateComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
